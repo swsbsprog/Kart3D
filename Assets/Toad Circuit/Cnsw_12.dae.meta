@@ -1,0 +1,236 @@
+fileFormatVersion: 2
+guid: caafac3da5e8cb640945fbb8d3129f8e
+ModelImporter:
+  serializedVersion: 21300
+  internalIDToNameTable: []
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_Cnsw_12_Adience
+    second: {fileID: 2100000, guid: f565f1229374e7f4a8a8d9198052256d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_Cnsw_12_CmnStartGridModel
+    second: {fileID: 2100000, guid: e2a903dbf2539414690b8a93a0e31fdc, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_Cnsw_12_ColorComb_Kinoko
+    second: {fileID: 2100000, guid: 292f5cb43b6c88241b1aca58c39e3821, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_Cnsw_12_ColorComb_Obj
+    second: {fileID: 2100000, guid: 53b31f7fefb657143af8fa968a6fae0c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_Cnsw_12_ColorComb_Obj1
+    second: {fileID: 2100000, guid: 63b342d111f89d945af9e4adba0ab545, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_Cnsw_12_ColorComb_ObjSteel
+    second: {fileID: 2100000, guid: abb2cad8e36c6dd4194278686949af85, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_Cnsw_12_ColorComb_Roadparts
+    second: {fileID: 2100000, guid: 1bf6c8c9980f4d44ea97f0379ef96aa7, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_Cnsw_12_ColorComb_RoadpartsFrame
+    second: {fileID: 2100000, guid: 1b0b088332b8d184682908d35ae358dc, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_Cnsw_12_ColorComb_Rock
+    second: {fileID: 2100000, guid: fda1bba9d0ece8f46aac372639cccf76, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_Cnsw_12_ColorComb_Sand
+    second: {fileID: 2100000, guid: 45265f7ee424cf047891f2960e44bcce, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_Cnsw_12_ColorComb_Siba
+    second: {fileID: 2100000, guid: 87c9a5c03db9ebe42a52c722e9a3dc6a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_Cnsw_12_ColorComb_Stand
+    second: {fileID: 2100000, guid: 40085cd95a365254d8fcc717823129ed, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_Cnsw_12_ColorComb_Stand1
+    second: {fileID: 2100000, guid: 0a163e7f87c0a234aa2cd308453230f0, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_Cnsw_12_ColorComb_StandFance
+    second: {fileID: 2100000, guid: a7ed3052caee90843abede41934f3ae6, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_Cnsw_12_ColorComb_Tunnel
+    second: {fileID: 2100000, guid: 83ef40d7440d04c4c88e840a6b958197, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_Cnsw_12_ColorComb_building
+    second: {fileID: 2100000, guid: b8acbfb5cff0d2e45bcef595fdf0a0bd, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_Cnsw_12_ColorComb_buildingShutter
+    second: {fileID: 2100000, guid: 83d2438762f8eba4b912fdd7c78a2fae, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_Cnsw_12_ColorComb_buildingWall
+    second: {fileID: 2100000, guid: 5b7088d5cd177eb44baa07e3196097e8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_Cnsw_12_ColorComb_tree
+    second: {fileID: 2100000, guid: 8805a125273baf14b895c9b869b3cb1e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_Cnsw_12_ColorComb_yama
+    second: {fileID: 2100000, guid: 8010e179ea7e8f44c8810dffdf2efc2e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_Cnsw_12_Nature
+    second: {fileID: 2100000, guid: 7567e2e3e1cf08941b4b252ec266e24f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_Cnsw_12_Road
+    second: {fileID: 2100000, guid: a990862d19d3a894383bd10bca0c19a7, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_Cnsw_12_Signoard01
+    second: {fileID: 2100000, guid: 6ef0028ea10b6bd43906ef3d0867d10a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_Cnsw_12_ami01
+    second: {fileID: 2100000, guid: 5e533852ad16c9740bdce074c8a0311c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_cnsw_17_DecalConfetti
+    second: {fileID: 2100000, guid: b7c0a983fd3f5e04f93242295c609f87, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: ef_dashboard
+    second: {fileID: 2100000, guid: 1f26ff5a764d8c1448477b7bab3aa167, type: 2}
+  materials:
+    materialImportMode: 2
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    removeConstantScaleCurves: 1
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 0
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 0.01
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    sortHierarchyByName: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    nodeNameCollisionStrategy: 1
+    fileIdsGeneration: 2
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    keepQuads: 0
+    weldVertices: 1
+    bakeAxisConversion: 0
+    preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    optimizeBones: 1
+    meshOptimizationFlags: -1
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVMarginMethod: 1
+    secondaryUVMinLightmapResolution: 40
+    secondaryUVMinObjectScale: 1
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  referencedClips: []
+  importAnimation: 1
+  humanDescription:
+    serializedVersion: 3
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    globalScale: 0.01
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  autoGenerateAvatarMappingIfUnspecified: 1
+  animationType: 2
+  humanoidOversampling: 1
+  avatarSetup: 0
+  addHumanoidExtraRootOnlyWhenUsingAvatar: 1
+  remapMaterialsIfMaterialImportModeIsNone: 0
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
