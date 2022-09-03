@@ -71,16 +71,16 @@ Material:
     - _GlossMapScale: 1
     - _Glossiness: 0
     - _GlossyReflections: 1
-    - _Lumin: 0
+    - _Lumin: 0.465
     - _MaxLight: 1
     - _Metallic: 0
-    - _MinLight: 0.5
+    - _MinLight: 0.965
     - _Mode: 0
     - _OcclusionStrength: 1
     - _Offset: 0
     - _Parallax: 0.02
     - _Segmented: 1
-    - _ShnIntense: 0.456
+    - _ShnIntense: 0.184
     - _ShnOverlap: 0
     - _ShnRange: 0.15
     - _ShnSmooth: 0
