@@ -15,6 +15,8 @@ public class StageManager : MonoBehaviour
     public AudioSource audioSource;
     public AudioClip timeReduce;
     public AudioClip timeStart;
+    public MeshRenderer[] lightRenderers;
+    public Color lightColor = Color.green;
 
     IEnumerator Start()
     {
@@ -31,6 +33,8 @@ public class StageManager : MonoBehaviour
         audioSource.PlayOneShot(timeStart);
         countText.text = "Start!";
         isGameStart = true;
+        foreach(var lr in lightRenderers)
+            lr.material.color = lightColor;
 
         yield return wait;
         countText.gameObject.SetActive(false);
