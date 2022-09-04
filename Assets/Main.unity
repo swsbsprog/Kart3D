@@ -1980,9 +1980,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   countText: {fileID: 486147071}
-  remainTime: 1
+  remainTime: 3
   isGameStart: 0
   kartMover: {fileID: 2062313997}
+  audioSource: {fileID: 359758589}
+  timeReduce: {fileID: 8300000, guid: a935550c6172c6548b1bc8de6e56618a, type: 3}
+  timeStart: {fileID: 8300000, guid: 30a284806deffbb4691f78109d0b617b, type: 3}
 --- !u!4 &2034571898
 Transform:
   m_ObjectHideFlags: 0
@@ -2017,7 +2020,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   acc: 200
   maxSpeed: 20000
-  currentSpeed: 0
+  currentSpeed: 10000
   attenuation: 0.1
   maxAttenuation: 0
   backSpeedRatio: 0.5

@@ -12,6 +12,10 @@ public class StageManager : MonoBehaviour
     public int remainTime = 3;
     public bool isGameStart = false;
     public KartMover kartMover;
+    public AudioSource audioSource;
+    public AudioClip timeReduce;
+    public AudioClip timeStart;
+
     IEnumerator Start()
     {
         kartMover.enabled = false;
@@ -21,14 +25,16 @@ public class StageManager : MonoBehaviour
         {
             countText.text = remainTime.ToString();
             remainTime--;
+            audioSource.PlayOneShot(timeReduce);
             yield return wait;
         }
+        audioSource.PlayOneShot(timeStart);
         countText.text = "Start!";
         isGameStart = true;
 
         yield return wait;
         countText.gameObject.SetActive(false);
 
-        kartMover.OnStart();
+        kartMover.enabled = true;
     }
 }
