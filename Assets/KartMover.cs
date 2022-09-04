@@ -5,14 +5,20 @@ using UnityEngine;
 
 public class KartMover : MonoBehaviour
 {
-    public float power = 10000f;
+    public float acc = 10000f;      // 가속도(acceleration)
+    public float maxSpeed = 10000f;
+    public float currentSpeed = 0;
+    public float attenuation = 100;   // 마찰에 의한 속도 감쇠('감쇠'는 '힘이나 세력 따위가 줄어서 약하여짐.')
+    [SerializeField] float maxAttenuation;
+    public float backSpeedRatio = 0.5f;
+
     public float rotate = 1f;
     public Rigidbody rb;
     public AudioClip startClip;
     public AudioClip runClip;
+    public AudioClip maxRunClip;
     public AudioSource engineSource;
     public AudioSource sfxSource;
-    float force;
     float lastForce;
     private void FixedUpdate()
     {
@@ -22,10 +28,18 @@ public class KartMover : MonoBehaviour
         rb.angularVelocity = angularVelocity;
 
         float forwardMove = Input.GetAxis("Vertical");
-        force = forwardMove * power;
+        if (forwardMove > 0)
+            PlayFirstStartSound();
+         
+        currentSpeed = currentSpeed + acc * forwardMove;  // 속도 증가/감소
+        float absCurrentSpeed = Math.Abs(currentSpeed);
+        maxAttenuation = Math.Clamp(acc * attenuation, -absCurrentSpeed, absCurrentSpeed);
+        currentSpeed = currentSpeed + (currentSpeed > 0 ? -maxAttenuation : maxAttenuation); // 감쇠
+        currentSpeed = Math.Clamp(currentSpeed, - maxSpeed * backSpeedRatio, maxSpeed);
+        float force = currentSpeed;
+        
         if (force != 0)
         {
-            PlayFirstStartSound();
             var velocity = rb.velocity;
             velocity.x = 0;
             velocity.z = 0;
@@ -34,7 +48,12 @@ public class KartMover : MonoBehaviour
             forward.y = 0;
             rb.AddForce(forward * force);
         }
-        engineSource.volume = forwardMove;
+
+        engineSource.volume = Math.Abs(currentSpeed) / maxSpeed;
+        var lastClip = engineSource.clip;
+        engineSource.clip = currentSpeed == maxSpeed ? maxRunClip : runClip;
+        if(lastClip != engineSource.clip)
+            engineSource.Play();
 
         float rotate = Input.GetAxis("Horizontal") * this.rotate;
         rb.AddRelativeTorque(0, rotate, 0, ForceMode.VelocityChange);
@@ -48,12 +67,5 @@ public class KartMover : MonoBehaviour
         sfxSource.Stop();
         sfxSource.clip = startClip;
         sfxSource.Play();
-    }
-
-    public void OnStart()
-    {
-        enabled = true;
-        engineSource.clip = runClip;
-        engineSource.Play();
     }
 }

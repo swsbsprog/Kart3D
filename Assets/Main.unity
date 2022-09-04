@@ -1980,7 +1980,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   countText: {fileID: 486147071}
-  remainTime: 3
+  remainTime: 1
   isGameStart: 0
   kartMover: {fileID: 2062313997}
 --- !u!4 &2034571898
@@ -2015,11 +2015,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e0c7adb8b7222544a1546246c0d2dc2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  power: 20000
+  acc: 200
+  maxSpeed: 20000
+  currentSpeed: 0
+  attenuation: 0.1
+  maxAttenuation: 0
+  backSpeedRatio: 0.5
   rotate: 1
   rb: {fileID: 2062313998}
   startClip: {fileID: 8300000, guid: fc58125bd5e1d457c86a087d8ee30621, type: 3}
-  runClip: {fileID: 8300000, guid: 7eb03bd77be2345cd94afa59ba4cec74, type: 3}
+  runClip: {fileID: 8300000, guid: 819e4330b56d74b398255782be41515f, type: 3}
+  maxRunClip: {fileID: 8300000, guid: 7eb03bd77be2345cd94afa59ba4cec74, type: 3}
   engineSource: {fileID: 880157052}
   sfxSource: {fileID: 359758589}
 --- !u!54 &2062313998
@@ -2121,6 +2127,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 5596955342417646559, guid: 23590c35c537b4d43991f5cecbcb8491, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5836584029045203732, guid: 23590c35c537b4d43991f5cecbcb8491, type: 3}
       propertyPath: m_Name
       value: Map
@@ -2175,6 +2185,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 7556354646146864555, guid: 23590c35c537b4d43991f5cecbcb8491, type: 3}
+    - {fileID: 1743388634349850493, guid: 23590c35c537b4d43991f5cecbcb8491, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 23590c35c537b4d43991f5cecbcb8491, type: 3}
 --- !u!1 &3215409781924861695 stripped
 GameObject:
